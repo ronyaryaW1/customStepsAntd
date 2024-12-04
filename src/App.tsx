@@ -3,27 +3,29 @@ import { Steps } from 'antd';
 
 const submissionStatus = null
 const appFormStatus = 'DRAFT'
-const ilusStatus = 'FINISH'
+const illusStatus = 'ERROR'
 const App: React.FC = () => {
 
   return (
     <Steps
-      // current={current}
       className='steps-illustration'
       items={[
         {
           title: 'Ilustration',
           status: 'error',
           className: appFormStatus !== null ? 'illusItem' : '',
+          description: illusStatus
         },
         {
           title: 'SPAJ',
-          status: 'error',
-          className: submissionStatus !== null ? 'spajItem ' : ''
+          status: 'process',
+          className: submissionStatus !== null ? 'spajItem ' : '',
+          description: appFormStatus
         },
         {
           title: 'Submission',
-          status: submissionStatus !== null ? 'process' : undefined
+          status: submissionStatus !== null ? 'process' : undefined,
+          description: submissionStatus ?? 'null'
         },
       ]}
     />
