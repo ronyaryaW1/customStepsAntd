@@ -2,7 +2,7 @@ import React from 'react';
 import { Steps } from 'antd';
 
 const submissionStatus = 'SUBMITTED'
-const appFormStatus = 'EXPIERED'
+const appFormStatus = 'DRAFT'
 const illusStatus = 'ERROR'
 const App: React.FC = () => {
   return (

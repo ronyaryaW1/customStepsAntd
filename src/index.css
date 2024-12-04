@@ -17,14 +17,14 @@ code {
 }
 
 /* Custom Connector line antd */
-.ant-steps-item.ant-steps-item-wait.spajItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after, 
 
+/* .ant-steps-item.ant-steps-item-wait.spajItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after,  */
 .ant-steps-item.ant-steps-item-process.spajItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after, 
 .ant-steps-item.ant-steps-item-error.spajItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after {
   background-color: blue !important;
   display: block;
 }
-.ant-steps-item.ant-steps-item-wait.illusItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after, 
+/* .ant-steps-item.ant-steps-item-wait.illusItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after,  */
 .ant-steps-item.ant-steps-item-process.illusItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after, 
 .ant-steps-item.ant-steps-item-error.illusItem .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title::after {
   background-color: blue !important;
