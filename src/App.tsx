@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Steps } from 'antd';
 
-const submissionStatus = null
-const appFormStatus = 'DRAFT'
+const submissionStatus = 'SUBMITTED'
+const appFormStatus = 'EXPIERED'
 const illusStatus = 'ERROR'
 const App: React.FC = () => {
 
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         },
         {
           title: 'SPAJ',
-          status: 'process',
+          status: 'error',
           className: submissionStatus !== null ? 'spajItem ' : '',
           description: appFormStatus
         },
