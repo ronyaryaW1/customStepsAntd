@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Steps } from 'antd';
 
-function App() {
+const submissionStatus = null
+const appFormStatus = 'DRAFT'
+const ilusStatus = 'FINISH'
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Steps
+      // current={current}
+      className='steps-illustration'
+      items={[
+        {
+          title: 'Ilustration',
+          status: 'error',
+          className: appFormStatus !== null ? 'illusItem' : '',
+        },
+        {
+          title: 'SPAJ',
+          status: 'error',
+          className: submissionStatus !== null ? 'spajItem ' : ''
+        },
+        {
+          title: 'Submission',
+          status: submissionStatus !== null ? 'process' : undefined
+        },
+      ]}
+    />
+  )
+};
 
 export default App;
